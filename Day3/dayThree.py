@@ -1,3 +1,10 @@
+n = int(input("Enter a positive integer: "))
+
+fibonacci = [0, 1]  # Initialize the Fibonacci sequence with the first two numbers
+
+for i in range(2, n):
+    next_num = fibonacci[i-1] + fibonacci[i-2]
+    fibonacci.append(next_num)
 # Fibonacci: Write a program that prompts the user to 
 # enter a positive integer n, and then prints the first 
 # n Fibonacci numbers. The Fibonacci sequence starts 
